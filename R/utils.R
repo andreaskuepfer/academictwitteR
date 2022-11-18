@@ -1,4 +1,4 @@
-make_query <- function(url, params, bearer_token, max_error = 4, verbose = TRUE) {
+make_query <- function(url, params, bearer_token, max_error = 1000, verbose = TRUE) {
   bearer_token <- check_bearer(bearer_token)
   count <- 0
   while (TRUE) {
